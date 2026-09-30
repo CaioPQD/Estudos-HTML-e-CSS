@@ -1,0 +1,43 @@
+body{
+    background-color: purple;
+}
+
+#container-pai{
+    width: 700px;
+    background-color: white;
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+} 
+
+.borda{
+    border: 1px solid red;
+}
+
+.estatica{
+    position: static;
+}
+
+.relativa{
+    position: relative;
+    top: 10px; /* Espaçamento de 10px no topo movendo o item para baixo*/
+    left: 10px;/*Espaçamento de 10px na esquerda movendo o item para a direita*/
+}
+
+.absoluta{
+    /* Absolute se alinha baseado ao conteiner com posição relativa mais proxima. 
+    Esta sendo posicionado no body pois o conteiner pai não tem uma posição definida*/
+    position: absolute;
+    width: 500px;
+    margin: 0px;
+}
+
+.fixed{
+    /*A position fixed é sempre baseada na area da tela ou view*/
+    position: fixed;
+    width: 200px;
+    height: 120px;
+    top: 18em;
+    left: 1.5em;
+    z-index: 1;
+}

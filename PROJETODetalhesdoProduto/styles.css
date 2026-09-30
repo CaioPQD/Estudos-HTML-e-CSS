@@ -1,0 +1,23 @@
+h1 {
+    color: purple;
+}
+
+html {
+    background-color: lightgray;
+}
+
+body {
+    border: 2px solid gray;
+    margin: 30px;
+    padding: 20px;
+    background-color: white;
+}
+
+img {
+    border: 2px solid purple
+    
+}
+
+.Info {
+    color: lightslategray;
+}

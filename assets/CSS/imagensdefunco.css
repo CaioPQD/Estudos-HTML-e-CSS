@@ -1,0 +1,11 @@
+body {
+            
+            background-image: url(/1b-imagens-necessarias-imagem-fundo/imagens-necessarias/fundo-site.png)
+
+            
+            
+        } 
+.imagemdefundo {
+    background: #d9d7b6 url(/1b-imagens-necessarias-imagem-fundo/imagens-necessarias/fundo-h1.png) repeat-x;
+    
+}

@@ -1,0 +1,22 @@
+.caixa{
+    /* width define uma largura fixa, ou seja se eu expandir a pagina a largura continua a mesma,
+    ja o min-width define uma largura minima quando o conteudo diminui, o max-width define a largura maxima. 
+    a largura acompanha o conteudo quando expandido.*/
+    /* min-width: 300px;*/
+    /*max-width: 600px;*/
+    
+    width: 600px;
+    height: 300px;
+    background-color: lightgrey;
+    border: 1px solid red;
+    /*
+    Sobreposição de conteúdo/Overflow
+    visible(padrão): Exibe o comtéudo de forma vazada,
+    fora da caixa de conteúdo
+    hiddem: Esconde o conteúdo excedente
+    scroll: sempre exibe barras de rolagem
+    auto: adiciona scroll somente se necessário
+    */
+    overflow:scroll ;
+
+}

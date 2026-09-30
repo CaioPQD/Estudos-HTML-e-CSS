@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <!--
+    fildset e legend - elementos para agrupar e rotular campos de formulário
+    <form> - elemento para criar formulários, importante ser criado e colocado os inputs dentro dele 
+    para que o formulário funcione corretamente, é necessário colocar o atributo action e method no elemento form
+    action - atributo que define a URL para onde os dados do formulário serão enviados
+    method - atributo que define o método de envio dos dados (GET ou POST)
+    <input> - elemento para criar campos de entrada
+    tipos de input:
+        type="text" - campo de texto
+        type="password" - campo de senha
+        type="email" - campo de email
+        type="number" - campo de número
+        type="checkbox" - campo de seleção múltipla
+        type="radio" - campo de seleção única
+        type="submit" - botão de envio do formulário
+        type="reset" - botão de reset do formulário
+        textarea - campo de texto de múltiplas linhas
+        type="file" - campo de upload de arquivo
+        <select> - elemento para criar uma lista suspensa
+        <label> - elemento para criar rótulos
+        for - atributo que define a qual input o rótulo está associado, for <-> id
+        <button> - elemento para criar botões
+    -->
+
+    <h1>Cadastro</h1>
+
+    <form action="www.google.com" method="get">
+        <!--Entrada de texto de linha unica-->
+        <fieldset>
+            <legend>Informações pessoais</legend>
+        <label for="User">Email:</label>
+        <br>
+        <input type="email" id="User" name="Email" placeholder="Digite seu email">
+        <br><br>
+
+        <label for="Password">Senha:</label>
+        <br>
+        <input type="password" id="Password" name="Senha" placeholder="Digite sua senha">
+        <br><br>
+
+        <label for="mensagem">Mensagem:</label>
+        <br>
+        <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+        <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gênero</legend>
+        <label>Sexo:</label>
+        <br>
+        <input type="radio" name="sexo" id="masculino" value="masculino">
+        <label for="masculino">Masculino</label>
+        <br>
+
+        <input type="radio" name="sexo" id="feminino" value="feminino">
+        <label for="feminino">Feminino</label>
+        <br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Linguagens de programação</legend>
+        <label for="linguagens">Linguagens de programação que deseja aprender:</label>
+        <br>
+        <input type="checkbox" name="linguagens" id="html" value="html">
+        <label for="html">HTML</label>
+        <br>
+        <input type="checkbox" name="linguagens" id="css" value="css">
+        <label for="css">CSS</label>
+        <br>
+        <input type="checkbox" name="linguagens" id="javascript" value="javascript">
+        <label for="javascript">JavaScript</label>
+        <br><br>    
+        </fieldset>
+        
+        
+        <fieldset>
+            <legend>Região</legend>
+            <label for="região">Região:</label>
+        <br>
+        <select name="região" id="região">
+            <option value="MG">Minas Gerais</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+        </select>
+        <br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Envio de autenticação por imagem</legend>
+        <input type="file" name="imagem" id="imagem">
+
+        <br><br>
+        <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+</body>
+</html>

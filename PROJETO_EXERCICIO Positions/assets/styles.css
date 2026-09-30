@@ -1,0 +1,65 @@
+body{
+    background-color: lightskyblue;
+    margin: 0;
+    padding: 0;
+}
+
+#principal{
+    width: 700px; /* Largura do conteiner principal */
+    background-color: white;  /* cor de fundo do conteiner principal */
+    margin: 1em auto;  /* espaçamento externo do conteiner principal */
+    padding: 0.8em;
+    position: relative; /* a img novo sera posicionada em relação a div principal */
+    /* ele passa a ser a referência de posicionamento para os elementos absolute que estão dentro dele*/
+    /* você está dizendo:
+
+    "Tire .novo do fluxo normal da página e coloque-o em uma posição específica."
+
+    Mas surge a pergunta:
+
+    "Posição específica em relação a quê?"
+
+    É aí que entra o position: relative do pai. */
+}
+
+.novo{
+    position: absolute; /* Posicionado de forma avsoluta em relação ao conteiner pai, no caso a div principal*/
+    top: 0;
+    right: 0;
+}
+
+#menu{
+    background-color: #0497f3;
+    padding: 5px;
+
+}
+
+#menu>img{
+    width: 100px;
+    padding-top: 15px;
+}
+
+#menu>a{
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    position: relative;
+    left: 150px ;
+}
+
+#menu>a:hover{
+    padding: 5px;
+    background-color: white;
+    color: #0497f3;
+}
+
+.chat{
+    background-color: violet;
+    width: 150px;
+    height: 200px;
+    padding: 0.5em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
