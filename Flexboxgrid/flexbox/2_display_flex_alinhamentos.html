@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamentos</title>
+    <style>
+        body{
+             background-color: black;
+        }
+
+        .container-flex-row{
+            flex-basis: 500px;
+            height: 200px;
+            border: 4px solid red;
+            display: flex;
+            flex-direction: row;
+
+/*linha horizontal*/
+            /*flex-start, flex-end, center, 
+            space-between, space-around, 
+            space-evenly*/
+            justify-content: center;
+
+/*Linha vertical*/
+            /*flex-start, flex-end, center,
+             stretch, baseline*/
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: space-between;
+            
+        }
+
+        .container-flex-column{
+        flex-basis: auto;
+        height: 200px;
+        border: 4px solid red;
+        display: flex;
+        flex-direction: column;
+
+/*linha horizontal*/
+        /*flex-start, flex-end, center, 
+        space-between, space-around, 
+        space-evenly*/
+        justify-content: center;
+
+/*Linha vertical*/
+        /*flex-start, flex-end, center,
+         stretch, baseline*/
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: space-between;
+        }
+
+        .container-flex-row>div{
+            font-size: 2rem;
+            color: white;
+            margin: 4px;
+            padding: 4px;
+            border: 4px solid white;
+            
+        }
+
+        .container-flex-column>div{
+            font-size: 2rem;
+            color: white;
+            margin: 4px;
+            padding: 4px;
+            border: 4px solid white;
+        }
+
+        .item{
+            
+            /*flex-shrink: 1;*/
+            /*flex-grow: 1;*/
+        }
+
+        .grow{
+            font-size: 2rem;
+            /*flex-shrink: 2;*/
+            /*flex-grow: 2;*/
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1 style="color: white;">
+        row 
+    </h1>    
+
+    <div class="container-flex-row">
+        <div>01</div>
+        <div class="item">02</div>
+        <div>03</div>
+      
+    </div>
+
+    <h1 style="color: white;">
+        column
+    </h1>
+
+    <div class="container-flex-column">
+        <div>01</div>
+        <div class="item">02</div>
+        <div>03</div>
+       
+    </div>
+</body>
+</html>

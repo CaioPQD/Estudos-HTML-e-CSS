@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    body{
+        font-size: 1.5rem;
+        background-color: black;
+        color: white;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .grid{
+        gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'cabecalho navegacao'
+            'principal principal'
+            'rodape rodape'
+        ;
+    }
+    /*CELULAR, TABLET, NOTEBOOK*/
+    @media (max-width: 600px){
+        .grid{
+             /* grid-template-columns: 1fr 1fr */
+        grid-template-areas:
+            'cabecalho cabecalho'
+            'navegacao navegacao'
+            'principal principal'
+            'rodape rodape'
+        ;
+        }
+    }
+
+    
+    
+    header, nav, main, footer {
+        border: 3px solid yellowgreen;
+    }
+
+    /*Nome das areas*/
+    header{grid-area: cabecalho;}
+    nav{grid-area: navegacao;}
+    main{grid-area: principal;}
+    footer{grid-area: rodape;}
+</style>
+
+<body>
+    <div class="grid">
+        <header>Cabeçalho</header>
+        <nav>Home | produtos | contatos | sobre</nav>
+        <main>
+            <h2>Conteudo do site</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Sint error minima eveniet odio autem quas temporibus, 
+                id cum, illum inventore quaerat sunt optio facere quam 
+                nulla ea sequi quod ex.
+            </p>
+        </main>
+        <footer>rodape</footer>
+    </div>
+</body>
+</html>
